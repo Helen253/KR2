@@ -1,0 +1,611 @@
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.header {
+    background-color: darkgray;
+    height: 100px;
+    width: 100%;
+
+}
+
+.headerNew {
+    background-color: darkgray;
+    height: 100px;
+    width: 100%;
+}
+
+#newText {
+    position: absolute;
+    min-width: 100%;
+    min-height: 700px;
+    top: 50px;
+    padding-left: 50px;
+
+}
+
+input[type="button"] {
+    width: 30px;
+    font-size: 15px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+}
+
+input[type="button"]#buttonEdit {
+    background-image: url(1.png);
+    position: relative;
+    left: 380px;
+    top: 34px;
+
+}
+
+input[type="button"]#bold {
+    background-image: url(2.png);
+    position: relative;
+    left: 410px;
+    top: 34px;
+}
+
+input[type="button"]#italic {
+    background-image: url(3.png);
+    position: relative;
+    left: 410px;
+    top: 34px;
+}
+
+input[type="button"]#underline {
+    background-image: url(4.png);
+    position: relative;
+    left: 410px;
+    top: 34px;
+}
+
+input[type="button"]#crossed {
+    background-image: url(5.png);
+    position: relative;
+    left: 410px;
+    top: 34px;
+}
+
+input[type="button"]#left {
+    background-image: url(6.png);
+    border: 1px solid darkgray;
+
+    position: relative;
+    left: 440px;
+    top: 34px;
+}
+
+
+input[type="button"]#center {
+    background-image: url(7.png);
+    position: relative;
+    left: 440px;
+    top: 34px;
+}
+
+input[type="button"]#right {
+    background-image: url(8.png);
+    position: relative;
+    left: 440px;
+    top: 34px;
+}
+
+select#typeFont {
+    width: 70px;
+    background-color: #cecece;
+    font-size: 18px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    position: relative;
+    left: 460px;
+    top: 28px;
+}
+
+select#sizeFont {
+    width: 70px;
+    background-color: #cecece;
+    font-size: 18px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    position: relative;
+    left: 460px;
+    top: 28px;
+}
+
+button.block {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    position: relative;
+    left: 920px;
+}
+
+.lock {
+    background-repeat: no-repeat;
+    background-image: url(13.png);
+    height: 23px;
+    width: 23px;
+}
+
+button.color {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    position: relative;
+    left: 885px;
+}
+
+.palitra {
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-image: url(11.png);
+}
+
+button.image {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    position: relative;
+    left: 885px;
+}
+
+.galery {
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-image: url(12.png);
+}
+
+.colorBox {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.newColor {
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.backgroundBox {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    margin-top: 15px;
+}
+
+.backgroundBoxImages {
+    width: 450px;
+    height: 360px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    margin-top: 15px;
+}
+
+.backgroundColor {
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.backgroundImage {
+    border: 1px solid white;
+    height: 120px;
+    width: 120px;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blockBox {
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 4px;
+    width: 450px;
+    height: 150px;
+}
+
+input[type="button"]#sn {
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+
+}
+
+input[type="text"]#login {
+    width: 450px;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+}
+
+input[type="password"]#pass {
+    margin-top: 20px;
+    width: 450px;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+}
+
+.error {
+    outline: 1px solid red;
+}
+
+.good {
+    outline: 1px solid gainsboro;
+}
+
+.box {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+}
+
+#empty,
+#empty2,
+#empty3 {
+    color: red;
+}
+
+#empty1 {
+    color: red;
+    position: absolute;
+    top: 300px;
+    left: 10px;
+}
+
+#check {
+    color: red;
+}
+
+#newText {
+    margin-top: 50px;
+    width: 800px;
+    height: 150px;
+}
+
+input[type="button"]#save {
+    background-image: url(14.png);
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 650px;
+    top: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button.table {
+    width: 30px;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    position: relative;
+    left: 650px;
+    top: 30px;
+    border-radius: 3px;
+
+
+}
+
+.tableImg {
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-image: url(15.png);
+    background-size: contain;
+    margin-left: -5px;
+}
+
+
+.modal-bodyTable {
+    height: 360px;
+    width: 860px;
+}
+
+.modal-content#content {
+    width: 860px;
+    margin-left: -180px;
+}
+
+input[type="text"]#inputTr {
+    width: 380px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+}
+
+#ctr {
+    position: absolute;
+    left: 10px;
+}
+
+input[type="text"]#inputTd {
+    width: 380px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 460px;
+    top: 88px;
+}
+
+#ctd {
+    position: absolute;
+    left: 460px;
+    top: 64px;
+}
+
+input[type="text"]#widthTD {
+    width: 380px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 168px;
+}
+
+#wot {
+    position: absolute;
+    left: 10px;
+    top: 146px;
+}
+
+input[type="text"]#heightTD {
+    width: 380px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 460px;
+    top: 168px;
+}
+
+#hot {
+    position: absolute;
+    left: 460px;
+    top: 144px;
+}
+
+#wob {
+    position: absolute;
+    left: 10px;
+    top: 226px;
+}
+
+input[type="text"]#widthBD {
+    width: 380px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 248px;
+}
+
+#top {
+    position: absolute;
+    left: 460px;
+    top: 226px;
+}
+
+#styleBorder {
+    position: absolute;
+    left: 460px;
+    top: 251px;
+}
+
+#sob {
+    position: absolute;
+    left: 665px;
+    top: 226px;
+}
+
+#colorBorder {
+    position: absolute;
+    left: 660px;
+    top: 251px;
+}
+
+select[name="choose"] {
+    width: 170px;
+    font-size: 15px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+}
+
+input[type="button"].reset {
+    width: 400px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(185, 47, 47);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 351px;
+}
+
+input[type="button"].createTable {
+    width: 400px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(21, 78, 50);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 450px;
+    top: 351px;
+}
+
+input[type="button"].createList {
+    width: 220px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(21, 78, 50);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 270px;
+    top: 180px;
+}
+
+.list {
+    height: 220px;
+}
+
+input[type="button"].resetList {
+    width: 220px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(185, 47, 47);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 180px;
+}
+
+input[type="button"].resetListUl {
+    width: 220px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(185, 47, 47);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 180px;
+}
+
+#typeMarks {
+    width: 440px;
+}
+
+#typeMarksUl {
+    width: 440px;
+}
+
+input[type="button"].createListUl {
+    width: 220px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    background-color: rgb(21, 78, 50);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 270px;
+    top: 180px;
+}
+
+#invalid {
+    color: red;
+    position: absolute;
+    left: 10px;
+    top: 301px;
+}
+
+#listIn {
+    color: red;
+}
+
+#listUl {
+    color: red;
+}
+
+button.olL {
+    width: 30px;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    position: relative;
+    left: 720px;
+    bottom: 13px;
+    border-radius: 3px;
+}
+
+.olImg {
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-image: url(16.png);
+    background-size: contain;
+    margin-left: -5px;
+}
+
+button.ulL {
+    width: 30px;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    position: relative;
+    left: 720px;
+    bottom: 13px;
+    border-radius: 3px;
+}
+
+.ulImg {
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-image: url(17.png);
+    background-size: contain;
+    margin-left: -5px;
+}
+
+input[type="text"].listCount {
+    width: 440px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+}
+
+input[type="text"].listCountUl {
+    width: 440px;
+    font-size: 12px;
+    padding: 10px 0 8px 0px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+}

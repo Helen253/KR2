@@ -270,12 +270,9 @@ input[type="password"]#pass {
     position: absolute;
 }
 
-#empty,
-#empty2,
-#empty3 {
+#empty,#empty2,#empty3  {
     color: red;
 }
-
 #empty1 {
     color: red;
     position: absolute;
@@ -506,7 +503,6 @@ input[type="button"].resetList {
     left: 10px;
     top: 180px;
 }
-
 input[type="button"].resetListUl {
     width: 220px;
     font-size: 12px;

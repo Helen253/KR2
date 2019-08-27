@@ -112,21 +112,35 @@ getSel('.createTable').onclick = function () {
     let sBD = getSel('#colorBorder').value;
     let table = getSelAll('.tableTable')
 
+
+
     let check = true;
     for (let i = 0; i < table.length; i++) {
         if (table[i].value != table[i].value * 1 || table[i].value == '') {
             check = false;
             table[i].classList.add("error")
-            getSel('#styleBorder').classList.add("error")
-            getSel('#colorBorder').classList.add("error")
             getSel('#empty1').style.display = 'block'
         } else {
             table[i].classList.add("good")
         }
     }
+    if (getSel('#styleBorder').value == 'solid' || getSel('#styleBorder').value == 'dashed' ||
+        getSel('#styleBorder').value == 'dotted' || getSel('#styleBorder').value == 'double') {
+        getSel('#styleBorder').classList.add("good")
+    } else if (getSel('#styleBorder').value == 'choose style' || getSel('#styleBorder').value != getSel('#styleBorder').value * 1) {
+        getSel('#styleBorder').classList.add("error")
+        check = false;
+    }
+    if (getSel('#colorBorder').value == 'black' || getSel('#colorBorder').value == 'red' ||
+        getSel('#colorBorder').value == 'blue' || getSel('#colorBorder').value == 'green') {
+        // getSel('#styleBorder').classList.add("good")
+    } else if (getSel('#colorBorder').value == 'choose style' || getSel('#colorBorder').value != getSel('#colorBorder').value * 1) {
+        getSel('#colorBorder').classList.add("error")
+        check = false;
+    }
     if (check) {
         getSel('#empty1').style.display = 'none'
-        getSel('#styleBorder').classList.add("good")
+        // getSel('#styleBorder').classList.add("good")
         getSel('#colorBorder').classList.add("good")
         let styleTd = `style="width:${wTd}px;height:${hTd}px;border:${wBD}px ${tBD} ${sBD}"`
         getSel('#newText').value += `<table>`
@@ -140,7 +154,6 @@ getSel('.createTable').onclick = function () {
         getSel('#newText').value += `</table>`
     }
 }
-
 getSel('.reset').onclick = function () {
     let table = getSelAll('.tableTable')
     for (let i = 0; i < table.length; i++) {
@@ -161,25 +174,24 @@ getSel('.createList').onclick = function () {
         getSel('.listCount').classList.add("error")
         getSel('#empty2').style.display = 'block'
     }
-    if (tm.value = "choose Ol type mark") {
+    if (getSel('#typeMarks').value == "choose Ol type mark") {
         getSel('#typeMarks').classList.add("error")
         getSel('#empty2').style.display = 'block'
     }
-
-    if (lc != "") {
-        if (tm.value != "choose Ol type mark")
-            getSel('#empty2').style.display = 'none';
+    // console.log(getSel('#typeMarks').value);
+    if (getSel('#typeMarks').value == '1' || getSel('#typeMarks').value == 'I' || getSel('#typeMarks').value == 'A') {
+        getSel('#empty2').style.display = 'none';
         getSel('.listCount').classList.add("good")
         getSel('#typeMarks').classList.add("good")
-        getSel('#newText').value += `<ol>`
-        for (let j = 0; j < lc; j++) {
-            getSel('#newText').value += `<li type="${tm}">item</li>`;
+        if (lc != "") {
+            getSel('#newText').value += `<ol>`
+            for (let j = 0; j < lc; j++) {
+                getSel('#newText').value += `<li type="${tm}">item</li>`;
+            }
+            getSel('#newText').value += `</ol>`
         }
-        getSel('#newText').value += `</ol>`
     }
-
 }
-
 getSel('.resetList').onclick = function () {
     getSel('.listCount').value = "Type here..."
     getSel('#typeMarks').classList.add("good")
@@ -198,30 +210,32 @@ getSel('.createListUl').onclick = function () {
         getSel('.listCountUl').classList.add("error")
         getSel('#empty3').style.display = 'block'
     }
-    if (tmu.value = "choose Ul type mark") {
+    if (getSel('#typeMarksUl').value == "choose Ul type mark") {
         getSel('#typeMarksUl').classList.add("error")
         getSel('#empty3').style.display = 'block'
     }
-
-    if (lcu != "") {
-        if (tmu.value != "choose Ul type mark")
-            getSel('#empty3').style.display = 'none';
-        getSel('.listCountUl').classList.add("good")
-        getSel('#typeMarksUl').classList.add("good")
-        getSel('#newText').value += `<ul>`
-        for (let i = 0; i < lcu; i++) {
-            getSel('#newText').value += `<li style="list-style-type:${tmu}">item</li>`;
-        }
-        getSel('#newText').value += `</ul>`
-
-    }
-    getSel('.resetListUl').onclick = function () {
-        getSel('.listCountUl').value = "Type here..."
-        getSel('#typeMarksUl').classList.add("good")
-        getSel('.listCountUl').classList.add("good")
+    // console.log(getSel('#typeMarksUl').value);
+    if (getSel('#typeMarksUl').value == 'circle' || getSel('#typeMarksUl').value == 'disc' || getSel('#typeMarksUl').value == 'square') {
         getSel('#empty3').style.display = 'none';
-        getSel('#typeMarksUl').value = "choose Ul type mark"
+        getSel('.listCountUl').classList.add("good")
+        getSel('#typeMarksUl').classList.add("good")
+        if (lcu != "") {
+            getSel('#newText').value += `<ul>`
+            for (let i = 0; i < lcu; i++) {
+                getSel('#newText').value += `<li style="list-style-type:${tmu}">item</li>`;
+            }
+            getSel('#newText').value += `</ul>`
+
+        }
     }
+
+}
+getSel('.resetListUl').onclick = function () {
+    getSel('.listCountUl').value = "Type here..."
+    getSel('#typeMarksUl').classList.add("good")
+    getSel('.listCountUl').classList.add("good")
+    getSel('#empty3').style.display = 'none';
+    getSel('#typeMarksUl').value = "choose Ul type mark"
 }
 
 $(document).ready(function () {
